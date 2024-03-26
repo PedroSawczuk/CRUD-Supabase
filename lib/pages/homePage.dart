@@ -159,6 +159,24 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
               ),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.loginPage);
+              },
+              child: Text('Login'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.criarContaPage);
+              },
+              child: Text('Criar Conta'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.esqueciSenhaPage);
+              },
+              child: Text('Esqueci senha'),
+            ),
           ],
         ),
       ),

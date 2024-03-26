@@ -21,24 +21,19 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextFormField(
+          TextField(
             decoration: InputDecoration(
               labelText: 'E-mail',
-              icon: Icon(Icons.email_outlined),
               border: OutlineInputBorder(),
+              prefixIcon: Icon(Icons.email),
             ),
           ),
           SizedBox(
             height: 12,
           ),
-          TextFormField(
-            decoration: InputDecoration(
-              labelText: 'Senha',
-              icon: Icon(Icons.lock),
-              border: OutlineInputBorder(),
-            ),
-          ),
+
           SizedBox(
             height: 12,
           ),

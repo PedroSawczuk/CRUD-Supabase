@@ -21,22 +21,23 @@ class _CriarContaPageState extends State<CriarContaPage> {
         ),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextFormField(
+          TextField(
             decoration: InputDecoration(
               labelText: 'E-mail',
-              icon: Icon(Icons.email_outlined),
               border: OutlineInputBorder(),
+              prefixIcon: Icon(Icons.email),
             ),
           ),
           SizedBox(
             height: 12,
           ),
-          TextFormField(
+          TextField(
             decoration: InputDecoration(
               labelText: 'Senha',
-              icon: Icon(Icons.lock),
               border: OutlineInputBorder(),
+              prefixIcon: Icon(Icons.lock),
             ),
           ),
           SizedBox(

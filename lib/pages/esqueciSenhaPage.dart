@@ -21,13 +21,14 @@ class _EsqueciSenhaPageState extends State<EsqueciSenhaPage> {
         ),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('Informe seu email para recuperar a senha'),
-          TextFormField(
+          TextField(
             decoration: InputDecoration(
               labelText: 'E-mail',
-              icon: Icon(Icons.email_outlined),
               border: OutlineInputBorder(),
+              prefixIcon: Icon(Icons.email),
             ),
           ),
           ElevatedButton(
